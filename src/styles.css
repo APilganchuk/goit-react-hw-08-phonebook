@@ -47,7 +47,12 @@ a:hover {
 h1 {
   text-align: center;
 }
-
+.Wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
 .Form {
   display: flex;
   flex-direction: column;

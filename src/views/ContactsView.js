@@ -1,3 +1,4 @@
+import '../styles.css';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
@@ -15,7 +16,7 @@ export default function ContactsView() {
     dispatch(contactsOperations.fetchContacts());
   }, [dispatch]);
   return (
-    <div>
+    <div className="Wrapper">
       <h1>Phonebook</h1>
       <ContactForm />
       <h2>Contacts</h2>
@@ -23,7 +24,7 @@ export default function ContactsView() {
       {isLoadingContacts && (
         <Loader
           type="Circles"
-          color="#b2ee8e"
+          color="slateblue"
           height={50}
           width={50}
           timeout={3000}
